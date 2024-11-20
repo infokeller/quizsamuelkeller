@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/shims-vue.d.ts","./src/vite-env.d.ts","./src/app.vue","./src/components/helloworld.vue","./src/components/homepage.vue","./src/components/quizquestion.vue","./src/components/quizresult.vue","./src/components/quizstart.vue"],"version":"5.6.3"}

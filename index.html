@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue + TS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <section class="topo">
+      <div class="barra-superior">
+        <span class="prosperidade-judaica">🔯 Prosperidade Judaica</span>
+        <div id="relógio">00:00:00</div>
+        <span class="produto-nome">Samuel Keller</span>
+        <span class="avaliacao">
+          Excelente <span class="estrelas">★★★★★</span> |<strong>436</strong>    avaliações no Trustpilot
+        </span>
+      </div>
+    </section>
+  </div>
+
+    <script>
+      function iniciarContagemRegressiva(duracao) {
+        let tempoRestante = duracao;
+        const display = document.getElementById('relógio');
+    
+        if (!display) return; // Verifica se o elemento existe
+    
+        const timer = setInterval(() => {
+          const horas = Math.floor((tempoRestante % 86400) / 3600);
+          const minutos = Math.floor((tempoRestante % 3600) / 60);
+          const segundos = tempoRestante % 60;
+    
+          display.textContent = 
+            (horas < 10 ? '0' : '') + horas + ":" + 
+            (minutos < 10 ? '0' : '') + minutos + ":" + 
+            (segundos < 10 ? '0' : '') + segundos;
+    
+          if (--tempoRestante < 0) {
+            clearInterval(timer);
+          }
+        }, 1000);
+      }
+    
+      // Inicie a contagem regressiva com, por exemplo, 1 hora (3600 segundos)
+      iniciarContagemRegressiva(28000);
+    </script>
+  </body>
+</html>

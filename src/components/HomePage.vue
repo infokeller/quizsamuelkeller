@@ -274,7 +274,9 @@
         <li>Entenda seus talentos naturais e como potencializá-los</li>
         <li>Acesso a meditação guiada dos judeus</li>
       </ul>
-      <button class="descobrir-btn">Quero Atingir meu Potencial Máximo →</button>
+      <button class="descobrir-btn" onclick="window.location.href='https://checkout.samuellkeller.com.br/p/prosperidade-judaica-2258Y1LGE'">
+        Quero Atingir meu Potencial Máximo →
+      </button>
       <div class="pagamento-seguro">
         <p>🛡️ Pagamento 100% Seguro</p>
         <p>7 dias de garantia incondicional. Se você não ficar satisfeito(a), devolvemos 100% do seu dinheiro.</p>
